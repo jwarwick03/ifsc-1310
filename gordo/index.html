@@ -2,18 +2,35 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="Gordo information">
-  <meta name="author" content="Joel Warwick">
+  <meta charset="utf-8"> <!--gives browser the character set for webpage-->
+  <title>Prototype HTML5 Assignment</title> <!--shows up on the tab when webpage is opened-->
+  <meta name="description" content="Gordo information"> <!--gives brower a description of webpage-->
+  <meta name="author" content="Joel Warwick"> <!--tells browser the author of webpage-->
 </head>
 
 <body>
   <main>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="_blank">UALR</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <header class="primary">
       <h1><strong>Gordo</strong></h1>
     </header>
     <section id="content">
+      <img src="assets/img/gordo.jpeg" alt="Gordo"/>
+  
+  <ol>
+    <li>Old Reliable</li>
+    <li>The Mission</li>
+    <li>The Jupiter AM-13</li>
+    <li>The Journey</li>
+  </ol>
+  
   <h2 id="old reliable">Old Reliable</h2>
 <p>Gordo was one of the first monkeys to make it into space as part of NASA's space program. 
 Eight monkeys had flown on NASA missions before him, five of whom went by the name of Albert.
@@ -22,29 +39,81 @@ flight into space. Even though he was weightless for over 8 minutes the on-board
 Gordo enjoyed his journey into space. Scientists monitoring the flight were pleased to note that the only slight
 side effect Gordo suffered from the entry into space was a modest slowing of his pulse.</p>
 
+<table border="1">
+  <caption><h3>Monkey Species</h3></caption>
+  <tr>
+    <th scope="col">Monkey Species</th>
+    <th scope="col">Scientific Name</th>
+    <th scope="col">Habitat</th>
+    <th scope="col">Diet</th>
+    <th scope="col">Behavior</th>
+  </tr>
+  <tr>
+    <td>Squirrel Monkey</td>
+    <td>Saimiri sciureus</td>
+    <td>Tropical forests</td>
+    <td>Fruits, insects</td>
+    <td>Social/playful</td>
+  </tr>
+  <tr>
+    <td>Chimpanzee</td>
+    <td>Pan troglodytes</td>
+    <td>Forests, savannas</td>
+    <td>Fruits, leaves, nuts</td>
+    <td>Intelligent, tool users</td>
+  </tr>
+  <tr>
+   <td>Gorilla</td>
+   <td>gorilla</td>
+   <td>Rainforests</td>
+   <td>Vegitarian</td>
+   <td>Herbivorous, knuckle-walkers</td>
+  </tr>
+  <tr>
+    <td>Capuchin Monkey</td>
+    <td>Cebus Capucinus</td>
+    <td>Various habitats</td>
+    <td>Fruits, insects</td>
+    <td>Agile, tool users</td>
+  </tr>
+</table>
+
+<blockquote>Gordo's courageous journey paved the way for human exploration of space. His mission 
+was a testament to the spirit of explorationand the quest for knowledge that drives us 
+to reach for the stars. - Dr. Astrid Johnson, Chief Scientist at NASA.</blockquote>
+
 <h2 id="the mission">The Mission</h2>
 <p>The rocket carrying Gordo into space would take off from the Atlantic Missile Range at Cape Canaveral,
 travel further than any monkey had ever travelled before - over 1,500 miles - and reach a height of 310 miles (500 km) 
 before returning to Earth and landing in the South Atlantic, 1,302 nautical miles south of Cape Canaveral.
-"We all heard the rumors that they want to send a monkey up first. Well, none of us wants to think that they're gonna 
-send a monkey up to do a man's work ... what they're trying to do to us is send a man up to do a monkey's work."
+<q>We all heard the rumors that they want to send a monkey up first. Well, none of us wants to think that they're gonna 
+send a monkey up to do a man's work ... what they're trying to do to us is send a man up to do a monkey's work.</q>
 Deke Slayton, Mercury Seven Astronaut</p>
 
 <h2 id="the jupiter">The Jupiter AM-13</h2>
 <p><em>The Jupiter IRBM</em> (Intermediate Range Ballistic Missile) was originally developed by the US Army as a long-range successor to 
 its PGM-11 Redstone missile, but was eventually taken over and deployed by the USAF for political reasons. It was also the 
-only one of the United States' early stategic ballistic missiles with some mobility.
-Flight Date: December 13, 1958
-Launch Time: 03.53 EST</p>
+only one of the United States' early stategic ballistic missiles with some mobility.</p>
+<dl>
+  <dt><h5>Flight Date:</h5></dt> 
+  <dd>December 13, 1958</dd>
+  <dt><h5>Launch Time:</h5></dt>
+  <dd>03.53 EST</dd>
+</dl>
 
 <h2 id="the journey">The Journey</h2>
 <p>Gordo wore a specially customised space suit custom made for a monkey about one foot tall. The space suit was fitted with 
 instruments, including temperature meters and microphones which recorded his historic suborbital journey, considered one of the 
-outstanding achievements of space research.
-Flight Time: 15 Minutes
-Apogee: 310 Miles</p>
+outstanding achievements of space research.</p>
+<dl>
+  <dt><h5>Flight Time:</h5></dt> 
+  <dd>15 Minutes</dd>
+  <dt><h5>Apogee:</h5></dt>
+  <dd>310 Miles</dd>
+</dl>
+
 </section>
-<h2 id="references">References</h2>
+<h4 id="references">References</h4>
 <ul>
   <li>Remembering 'Gordo'</li>
   <li>BBC - Monkey Lost After Space Flight</li>
@@ -52,9 +121,7 @@ Apogee: 310 Miles</p>
 </ul>
 
 <footer class="primary">
-<h6>The Famous Primates web site is a Web Standardistas production.
-XHTML + CSS released under a Creative Commons Attribution 3.0 license.
-Photography Copyright iStockphoto.</h6>
+<h6>2023 Joel Warwick | Photography &copy;iStockphoto. | <a href="mailto:joel@example.com">Send Email</a> | <a href="#top">Go to Top</a></h6>
 </footer>
 </main>
 </body>
