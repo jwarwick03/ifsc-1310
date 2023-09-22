@@ -1,6 +1,15 @@
 /* CSS Demo Project */
 
+/* Color Theme Swatches in Hex */
+/*.blue-complementary-1-hex { color: #2C70A8; }
+.blue-complementary-2-hex { color: #75C1FF; }
+.blue-complementary-3-hex { color: #58AEF5; }
+.blue-complementary-4-hex { color:#F5B658; }
+.blue-complementary-5-hex { color: #F5B658; }*/
+
+/* font-family: 'Poppins', sans-serif; */
+
 
 body{
-    background-color: #8AF4FF;
+    background-color: #75C1FF;
 }
