@@ -20,6 +20,53 @@ html {
     box-sizing: inherit;
   }
 
+/*  ---------------Responsive Images-----------------  */
+
+img{
+    max-width:100%;
+}
+
+
+
+ /*  --------------- Utility Styles -----------------  */
+
+.container{
+    width:80vw;
+    margin:40px auto;
+}
+
+#intro{
+    border-bottom: 1px solid #757272;
+    padding-bottom:14px;
+}
+
+#intro h2{
+    color: #2C70A8;
+    border-bottom: 1px solid #757272;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+}
+
+article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    padding:10px;
+    font-size:.8rem;
+    transition:.5s;
+}
+
+article.post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+article.post figure{
+    margin:0;
+}
+
   /*  --------------- Global Styles -----------------  */
 
 body{
@@ -58,6 +105,7 @@ header.primary h1 a{
 header.primary h2{
     font-size: 1.4rem;
     margin:0;
+
 }
 
 header.primary nav{
@@ -81,7 +129,53 @@ header.primary nav a{
     color:#fff;
     text-decoration: none;
     background-color: #000;
-    background-color: rgba(0,0,0,-4);
+    background-color: rgba(0,0,0,.4);
     padding:8px 16px;
     border-radius: 10px;
+    transition: .5s;
 }
+
+header.primary nav a:hover, header.primary nav a:active {
+background-color: rgba(0,0,0,.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ---------------Media Queries-----------------  */
+
+@media screen and (max-width:600px){
+
+    header.primary nav ul{
+        flex-direction:column;
+        max-width: 250px;
+        margin:auto;
+        gap:10px;
+    }
+
+    header.primary nav ul a{
+        display:block;
+    }
+
+
+
+}
+
+
+
