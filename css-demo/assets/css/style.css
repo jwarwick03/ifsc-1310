@@ -62,13 +62,13 @@ img{
 }
 
 #intro{
-    border-bottom: 1px solid #757272;
+    border-bottom: 1px solid #A8701B;
     padding-bottom:14px;
 }
 
 #intro h2{
-    color: #2C70A8;
-    border-bottom: 1px solid #757272;
+    color: #000;
+    border-bottom: 1px solid #A8701B;
 }
 
 #content{
@@ -88,7 +88,7 @@ article.post{
 }
 
 article.post:hover{
-    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+    box-shadow: 0 8px 16px #A8701B;
 }
 
 article.post figure{
@@ -116,8 +116,8 @@ article.post a:hover{
     text-decoration: none;
 }
 
-article.post h2{
-    color:#75C1FF;
+article.post p{
+    color: #c0c0c0;
 }
 
 
@@ -139,7 +139,7 @@ article.post h2{
 }
 
 #practice h3{
-    border-left:7px solid #2C70A8;
+    border-left:7px solid #F5B658;
     padding-left:10px;
 }
 
