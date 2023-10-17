@@ -108,7 +108,7 @@ article.post img{
 }
 
 article.post a{
-    color:#75C1FF
+    color:#75C1FF;
     transition:.5s;
 }
 
@@ -199,16 +199,12 @@ ol{
     list-style-type:lower-roman;
   }
   
-  li{
-  
-  }
   
   ul li > ul {
     list-style-type:square;
     color:red;
   }
   
-  dl{}
   dt{
     font-weight:bold;
   }
@@ -380,6 +376,3 @@ background-color: rgba(0,0,0,.8);
     }
 
 }
-
-
-
