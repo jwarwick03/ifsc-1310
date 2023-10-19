@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <title>Positioning Lab</title>
 <style type="text/css">
-* {
-	margin: 0px;
-	padding: 0px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
 	background-color: #ECECEC;
@@ -16,50 +17,50 @@ body {
 	text-align: center;
 	line-height: 24px;
 }
+.box{  
+  position: absolute;
+  width: 125px;
+  height: 100px;
+}
 #wrapper {
-	background-color: #FFF;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
+	background-color: #fff;
+  position:relative;
+  border: 1px solid #c0c0c0;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 2px 2px #000;
+  height:80vh;
 }
 #red {
-	background-color: #900;
-	width: 180px;
-	height: 150px;
-	position: ;
-	top: 0px;
-	left: 0px;
+  background-color: #900;
+  top:0;
+  left:0;
 }
 #green {
-	background-color: #090;
-	width: 180px;
-	height: 150px;
-	position: ;
-	top: 0px;
-	right: 0px;
+  background-color: #090;
+  top:0;
+  right:0;
 }
 #blue {
-	background-color: #00F;
-	width: 180px;
-	height: 150px;
+  background-color: #0074d9;
+  bottom:0;
+  left:0;
 }
 #purple {
-	background-color: #63C;
-	width: 180px;
-	height: 150px;
+  background-color: #63C;
+  bottom:0;
+  right:0;
 }
 #footer {
-	background-color: #666;
-	width: 180px;
-	height: 150px;
+  background-color: #666;
+  width: 100px;
+  height :100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-50px;
+  margin-left:-50px;
 }
 h1 {
 	color: #000;
@@ -72,10 +73,10 @@ h1 {
 <body>
 <h1>Exercise 1</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="box">Red</div>
+  <div id="green" class="box">Green</div>
+  <div id="blue" class="box">Blue</div>
+  <div id="purple" class="box">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>
