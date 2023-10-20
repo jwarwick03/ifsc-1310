@@ -6,25 +6,38 @@
   <title>IFSC 1310 | Joel Warwick</title>
   <meta name="description" content="A Collection of work from IFSC 1310 - Web Technologies">
   <meta name="author" content="Joel Warwick">
+  <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+  <header class="primary">
   <h1>Joel Warwick</h1>
   <nav>
     <ul>
       <li><a href="gordo/index.html">Prototype HTML5 Assignment</a></li>
       <li><a href="css-demo/index.html">CSS Demo</a></li>
       <li><a href="web-accessibility/index.html">Thoughts on Web Accessibility</a></li>
-      <li><a href="assets/img/css-diner.png">Image</a></li>
-      <li><a href="assets/img/flexboxfroggy.PNG">Image</a></li>
-      <li>Positioning Lab 
-        <ul>
-          <li><a href="positioning-lab/float-1.html">Float 1</a></li>
-          <li><a href="positioning-lab/float-2.html">Float 2</a></li>
-          <li><a href="positioning-lab/absolute-1.html">Absolute 1</a></li>
-          <li><a href="positioning-lab/absolute-2.html">Absolute 2</a></li>
-        </ul>
+      <li>
+      <div class="dropdown">
+        <button class="dropbtn">Images</button>
+        <div class="dropdown-content">
+          <a href="assets/img/css-diner.png">CSS Diner</a>
+          <a href="assets/img/flexboxfroggy.PNG">Flexbox Froggy</a>
+        </div>
+      </div>
+      </li>
+      <li>
+      <div class="dropdown">
+        <button class="dropbtn">Positioning Lab</button>
+        <div class="dropdown-content">
+          <a href="positioning-lab/float-1.html">Float 1</a>
+          <a href="positioning-lab/float-2.html">Float 2</a>
+          <a href="positioning-lab/absolute-1.html">Absolute 1</a>
+          <a href="positioning-lab/absolute-2.html">Absolute 2</a>
+        </div>
+      </div>
       </li>
     </ul>
   </nav>
+</header>
 </body>
 </html>
