@@ -56,15 +56,75 @@ body {
   color: #fff;
 }
 
+header.primary nav {
+  margin: 0 auto;
+  width: 1170px;
+}
 
+header.primary nav ul {
+  list-style: none;
+  text-align: right;
+  padding-top: 15px;
+}
+
+header.primary nav ul li {
+  float: none;
+  display: inline-block;
+}
+
+header.primary nav ul li:nth-child(1) {
+  float: left;
+}
+
+header.primary nav ul li:nth-child(2) {
+  float: left;
+}
+
+header.primary nav ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+header.primary nav ul li a:hover {
+  color: #005288;
+}
+
+header.primary {
+  width: 100%;
+  position: relative;
+}
+
+header.primary img {
+  width: 450px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -150px;
+  text-align: center;
+}
 
 /* ------------- Content --------------- */
 
+#content{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #dragon-overview {
-  color: #fff;
-  padding: 20px 15px;
+  align-self: flex-start;
+  padding: 50px 60px;
   background-image: url(../img/dragoncrew.8k.jpg);
   background-size: cover;
+  width:100vw;
+  max-width:100%;
+  height:650px;
 }
 
 #dragon-overview h2 {
@@ -73,3 +133,135 @@ body {
   font-size: 1.8rem;
   text-shadow: 2px 2px #000;
 }
+
+#dragon-overview p {
+  color:#5e6376;
+  font-size:1.4rem;
+  text-shadow: 1px 1px #000;
+}
+
+#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #33536b;
+  text-align: center;
+  font-size: 2em;
+}
+
+#articles h2 {
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+#articles article.post {
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #727272;
+}
+
+#articles article.post h2 {
+  font-size: 1.8em;
+  text-shadow: none;
+}
+
+#articles article.post h2 a{
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+#articles article.post h2 a:hover{
+  text-decoration: underline;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #3b638b;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+
+
+
+
+
+
