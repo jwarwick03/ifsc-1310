@@ -120,24 +120,32 @@ header.primary img {
 #dragon-overview {
   align-self: flex-start;
   padding: 50px 60px;
-  background-image: url(../img/dragoncrew.8k.jpg);
+  background-image: url(../img/dragoninspace.jpg);
   background-size: cover;
   width:100vw;
   max-width:100%;
-  height:650px;
+  height:750px;
+}
+
+#dragon-overview .content{
+  border-radius: 25px;
+  background-color: rgba(24, 24, 24, 0.5);
+  padding:20px;
+  margin-top: 50px;
 }
 
 #dragon-overview h2 {
   text-align: center;
-  color: #007ee5;
+  color: #5bc1e8;
   font-size: 1.8rem;
-  text-shadow: 2px 2px #000;
 }
 
 #dragon-overview p {
-  color:#5e6376;
+  text-align: center;
+  margin-top:60px;
+  color:#fff;
   font-size:1.4rem;
-  text-shadow: 1px 1px #000;
+  text-shadow: 2px 2px #000;
 }
 
 #articles .container {
@@ -164,7 +172,9 @@ header.primary img {
 }
 
 #articles article.post {
-  width: 30%;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   padding: 10px;
   transition: 0.6s;
@@ -174,6 +184,8 @@ header.primary img {
 }
 
 #articles article.post h2 {
+  justify-content: flex-start;
+  padding:0;
   font-size: 1.8em;
   text-shadow: none;
 }
@@ -189,6 +201,10 @@ header.primary img {
 
 #articles article.post:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#articles article figcaption{
+  
 }
 
 #articles article time,
@@ -209,19 +225,28 @@ header.primary img {
 }
 
 #articles .post img {
-  width: 100%;
-  height: 200px;
+  float:left;
+  width: 40%;
+  height: 70%;
   object-fit: cover;
 }
 
 #articles ul {
   padding: 0 20px;
+  justify-content: flex-end;
 }
 #articles li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  
+  
 }
 
-
+#colophon h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:#fff;
+}
 
 
 
