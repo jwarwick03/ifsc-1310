@@ -91,3 +91,19 @@ h1 {
     font-size: 1.8rem;
     margin-top: 0;
 }
+
+#p-e{
+  background-color: #5CA9E5;
+  width:70%;
+  margin:auto;
+  margin-top:40px;
+  padding:20px;
+  border-radius: 20px;
+  box-shadow:5px 5px #6E66E5;
+}
+
+#p-e h2{
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}

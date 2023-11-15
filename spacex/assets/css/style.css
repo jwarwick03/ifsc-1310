@@ -238,7 +238,25 @@ header.primary img {
 
 /* ---------------Media Queries----------------- */
 
-
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;
+    gap: 10px;
+  }
+  header.primary nav ul a {
+    display: block;
+  }
+  #content {
+    flex-direction: column;
+  }
+  #content img {
+    display: block;
+    margin: 20px auto;
+  }
+  
+}
 
 
 
