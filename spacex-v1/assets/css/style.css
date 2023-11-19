@@ -1,0 +1,339 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box;
+  background-image: url(../img/stars.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+header.primary nav {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+header.primary nav ul {
+  list-style: none;
+  text-align: right;
+  padding-top: 15px;
+}
+
+header.primary nav ul li {
+  float: none;
+  display: inline-block;
+}
+
+header.primary nav ul li:nth-child(1) {
+  float: left;
+}
+
+header.primary nav ul li:nth-child(2) {
+  float: left;
+}
+
+header.primary nav ul li a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+header.primary nav ul li a:hover {
+  color: #005288;
+}
+
+header.primary {
+  width: 100%;
+  position: relative;
+}
+
+header.primary img {
+  width: 450px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -150px;
+  text-align: center;
+}
+
+/* ------------- Content --------------- */
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#dragon-overview {
+  align-self: flex-start;
+  padding: 50px 60px;
+  background-image: url(../img/dragoninspace.jpg);
+  background-size: cover;
+  width: 100vw;
+  max-width: 100%;
+  height: 750px;
+}
+
+#dragon-overview .content {
+  border-radius: 25px;
+  background-color: rgba(24, 24, 24, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#dragon-overview h2 {
+  text-align: center;
+  color: #5bc1e8;
+  font-size: 1.8rem;
+}
+
+#dragon-overview p {
+  text-align: center;
+  margin-top: 60px;
+  color: #fff;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px #000;
+}
+
+#articles {
+  border-bottom: 3px solid #fff;
+}
+
+#articles .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  color:#000;
+  width: 390px;
+  max-width: 100%;
+  height: 640px;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+#articles header.primary h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.card h2 {
+  padding: 0 5px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.card h2 a {
+  text-decoration: none;
+  color: #5bc1e8;
+}
+
+.card p, li{
+  padding: 0 20px;
+}
+
+.rm a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.rm a:hover {
+  text-decoration: underline;
+}
+
+#articles .card:hover {
+  background-color: #4b4b4b;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+#launch img {
+  display: block;
+  border: 3px solid #a7a9ac;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#colophon {
+  text-align: center;
+}
+
+
+/* ---------------History Page----------------- */
+
+#history-content{
+  background-color: rgba(116, 115, 115, 0.5);
+  width:70%;
+  margin:auto;
+  padding:20px;
+  border-radius:25px;
+  text-align: center;
+}
+
+#history-content h1{
+  font-size: 1.8rem;
+  
+}
+
+table{
+  margin:auto;
+  margin-top: 20px;
+  background-color: rgba(116, 115, 115, 0.5);
+  padding:20px;
+  border-radius: 25px;
+}
+
+table caption{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+table tr:nth-child(even){background-color: #ffffff3a;}
+
+table tr:hover {background-color: #00528849;}
+
+table th {
+  padding:10px 5px;
+  text-align: left;
+  background-color: #005288;
+  color: white;
+}
+
+table td{
+  padding:10px 5px;
+}
+
+
+/* ---------------FAQ's Page----------------- */
+
+#faqs-content{
+  background-color: #fff;
+  color:#000;
+  padding:20px 40px;
+  width:80%;
+  margin:auto;
+  border-radius: 15px;
+}
+
+#faqs-content h1{
+  width:200px;
+  text-align: center;
+  margin:auto;
+  font-size: 1.8rem;
+  background-color: #005288;
+  color:#fff;
+  text-shadow: 3px 3px #000;
+  padding:20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+#faqs-content p{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+#faqs-content p:nth-last-child(-n+3){
+  border:none;
+  padding-bottom: 0;
+}
+
+#faqs-content h2{
+  border-left: 8px solid #A7A9AC;
+  padding-left: 5px;
+  border-radius:15px 5px;
+}
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;
+    gap: 10px;
+  }
+  header.primary nav ul a {
+    display: block;
+  }
+  #content {
+    flex-direction: column;
+  }
+  #content img {
+    display: block;
+    margin: 20px auto;
+  }
+}
