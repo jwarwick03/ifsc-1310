@@ -56,84 +56,53 @@ body {
   color: #fff;
 }
 
-header.primary .logo img{
-  width: 450px;
-  height: 60px;
-  display:block;
-  margin: auto;
-}
-
-header.primary nav {
-  
-}
-
-header.primary nav ul {
+nav{
   display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding:0;
-  list-style: none;
+  align-items:center;
+  justify-content:space-between;
+  padding: 0 10px;
 }
 
-header.primary nav ul li {
-  text-align:center;
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding:  10px 20px;
 }
+
 
 header.primary nav ul li a {
   color: #fff;
   font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
-header.primary nav ul li a:hover {
+nav ul li a:hover {
   color: #005288;
 }
 
-header.primary {
-  width: 100%;
-  
+div.img-wrapper{
+  background-image:url(../img/dragon-space.jpg);
+  background-size:cover;
+  background-position: center;
+  height:800px;
 }
 
 /* ------------- Content --------------- */
 
-#content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 #dragon-overview {
-  align-self: flex-start;
-  padding: 50px 60px;
-  background-image: url(../img/dragoninspace.jpg);
-  background-size: cover;
-  width: 100vw;
-  max-width: 100%;
-  height:800px;
+  color:#fff;
+  margin-top: 150px;
+  margin-left: 90px;
 }
 
-#dragon-overview .content {
-  border-radius: 25px;
-  background-color: rgba(24, 24, 24, 0.5);
-  padding: 20px;
-  margin-top: 50px;
+#dragon-overview h2{
+  font-size: 1.7rem;
 }
 
-#dragon-overview h2 {
-  text-align: center;
-  color: #5bc1e8;
-  font-size: 1.8rem;
-}
-
-#dragon-overview p {
-  text-align: center;
-  margin-top: 60px;
-  color: #fff;
-  font-size: 1.4rem;
-  text-shadow: 2px 2px #000;
+#dragon-overview p{
+  font-size: 1.5rem;
 }
 
 #articles {
@@ -281,7 +250,7 @@ table td{
   text-align: center;
   margin:auto;
   font-size: 1.8rem;
-  background-color: #005288;
+  background-color: #A7A9AC;
   color:#fff;
   text-shadow: 3px 3px #000;
   padding:20px;
@@ -307,27 +276,21 @@ table td{
 
 /* ---------------Media Queries----------------- */
 
-@media screen and (max-width: 600px) {
-  header.primary nav ul {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
-  }
-
-  header.primary nav ul li {
-    margin-bottom: 10px;
-    width: 400px;
-  }
-
-  header.primary nav ul li a {
-    display: block;
-  }
+@media screen and (max-width: 700px) {
+  nav {
+    justify-content:center;
+    flex-wrap:wrap; 
+   }
+ 
+  nav ul {
+    margin: auto;
+   }
 
   #dragon-overview{
     height:auto;
   }
 
-  section#articles .container {
+  #articles .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -341,9 +304,25 @@ table td{
     margin-bottom: 2em;
   }
 }
+
 @media screen and (max-width: 900px) {
+  nav {
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
   #dragon-overview{
-    height:auto;
+    margin-top:50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav ul{
+    display:flex;
+    flex-direction: column;
+  }
+
+  nav ul li{
+    text-align: center;
   }
 
 }
