@@ -71,7 +71,7 @@ nav ul li{
 }
 
 
-header.primary nav ul li a {
+nav ul li a {
   color: #fff;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -95,6 +95,7 @@ div.img-wrapper{
   color:#fff;
   margin-top: 150px;
   margin-left: 90px;
+  text-shadow: 2px 2px #000;
 }
 
 #dragon-overview h2{
@@ -105,8 +106,16 @@ div.img-wrapper{
   font-size: 1.5rem;
 }
 
+
+
 #articles {
   border-bottom: 3px solid #fff;
+}
+
+#articles > h2 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.8rem;
 }
 
 #articles .container {
@@ -190,6 +199,12 @@ div.img-wrapper{
 
 
 /* ---------------History Page----------------- */
+
+header.history-faqs nav{
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+header.history-faqs nav ul li a{color: #000;}
 
 #history-content{
   background-color: rgba(116, 115, 115, 0.5);
