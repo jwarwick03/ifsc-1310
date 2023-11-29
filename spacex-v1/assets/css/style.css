@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #005288;
+  color: #2892e6;
 }
 
 div.img-wrapper{
@@ -93,17 +93,18 @@ div.img-wrapper{
 
 #dragon-overview {
   color:#fff;
-  margin-top: 150px;
+  margin-top: 20px;
   margin-left: 90px;
   text-shadow: 2px 2px #000;
 }
 
-#dragon-overview h2{
-  font-size: 1.7rem;
+#dragon-overview img{
+  display:block;
+  margin-top:200px;
 }
 
-#dragon-overview p{
-  font-size: 1.5rem;
+#dragon-overview .drop-down{
+  display: none;
 }
 
 
@@ -155,7 +156,7 @@ div.img-wrapper{
 
 .card h2 a {
   text-decoration: none;
-  color: #5bc1e8;
+  color: #2892e6;
 }
 
 .card p, li{
@@ -207,7 +208,7 @@ header.history-faqs nav{
 header.history-faqs nav ul li a{color: #000;}
 
 header.history-faqs nav ul li a:hover {
-  color: #005288;
+  color: #2892E6;
 }
 
 #history-content{
