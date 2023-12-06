@@ -103,7 +103,7 @@ div.img-wrapper{
   margin-top:200px;
 }
 
-#dragon-overview .drop-down{
+#dragon-overview .drop-down {
   display: none;
 }
 
@@ -161,6 +161,10 @@ div.img-wrapper{
 
 .card p, li{
   padding: 0 20px;
+}
+
+.rm-content {
+  display:none;
 }
 
 .rm a {
@@ -282,6 +286,7 @@ table td{
   padding-bottom: 20px;
   border-bottom: 1px solid #000;
 }
+
 
 #faqs-content p:nth-last-child(-n+3){
   border:none;
