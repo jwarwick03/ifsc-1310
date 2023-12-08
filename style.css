@@ -22,9 +22,17 @@ header.primary {
 
 header.primary nav ul{
     display: flex;
+    flex-wrap:wrap;
+    gap:10px;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 20px;
+}
+
+nav li{
+  background-color:#00308f56;
+  padding:10px;
+  border-radius: 15px;
 }
 
 header.primary nav a{
@@ -34,9 +42,8 @@ header.primary nav a{
     transition: .5s;
 }
 
-header.primary nav a:hover {
+header.primary nav li:hover {
     background-color: #007EE5;
-    padding: 10px;
 
 }
 
@@ -92,7 +99,7 @@ h1 {
     margin-top: 0;
 }
 
-#p-e{
+.writing-assignment{
   background-color: #5CA9E5;
   width:70%;
   margin:auto;
@@ -102,7 +109,7 @@ h1 {
   box-shadow:5px 5px #6E66E5;
 }
 
-#p-e h2{
+.writing-assignment h2{
   text-align: center;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
