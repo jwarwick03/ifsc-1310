@@ -354,6 +354,12 @@ table td{
   border-left: 8px solid #A7A9AC;
   padding-left: 5px;
   border-radius:15px 5px;
+  margin-bottom: 10px;
+  cursor:pointer;
+}
+
+.faq-answer {
+  display:none;
 }
 
 /* ---------------Contact Page----------------- */
